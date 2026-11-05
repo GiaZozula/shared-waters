@@ -1,0 +1,29 @@
+# Portable adapter; do not import as a second service or apply blindly to the live Node service.
+# Adopt only after provisioning the restricted runtime login and trusted deployment job.
+services:
+  - type: web
+    name: shared-waters
+    runtime: docker
+    plan: free
+    region: virginia
+    branch: main
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    autoDeployTrigger: 'off'
+    healthCheckPath: /api/health
+    dockerCommand: sh -ec 'node build/server/verify-schema.js && exec node build/server/index.js'
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: API_ALLOWED_ORIGINS
+        value: https://shared-waters.giazozula.com,https://shared-waters.onrender.com
+      - key: COLLECTION_ENABLED
+        value: 'true'
+      - key: AIS_COLLECTION_MODE
+        value: on-demand
+      - key: AI_QUESTIONS_ENABLED
+        value: 'false'
+      - key: AISSTREAM_API_KEY
+        sync: false
+# Existing AI settings/identity secret must be preserved deliberately on adoption.
+# Migration credentials and Render API credentials belong only in trusted CI.

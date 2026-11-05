@@ -1,0 +1,26 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": [
+      "ES2022",
+      "DOM"
+    ],
+    "types": [
+      "node"
+    ],
+    "noEmit": false,
+    "rootDir": ".",
+    "outDir": "build"
+  },
+  "include": [
+    "server/index.ts",
+    "server/migrate.ts",
+    "server/verify-schema.ts",
+    "server/grant-runtime.ts"
+  ],
+  "exclude": [
+    "**/*.test.ts"
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "entries": [
+    {
+      "public-global-presence:v5.0": [
+        {
+          "vesselId": "ead2e3e16-6fd0-9b75-6bac-1fc47899f10a",
+          "date": "2026-09-18 19:00",
+          "lat": 49.24,
+          "lon": -64.08000183105469,
+          "hours": 1,
+          "shipName": "CIC OSLO",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "5aa565a10-0617-f79c-8b09-87295ebb7276",
+          "date": "2026-09-18 22:00",
+          "lat": 49.46,
+          "lon": -64.38999938964844,
+          "hours": 1,
+          "shipName": "ANDROS GLORY",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "67e69c110-0d67-76bc-8645-a0d35ec99c3e",
+          "date": "2026-09-18 17:00",
+          "lat": 49.23,
+          "lon": -64.05000305175781,
+          "hours": 1,
+          "shipName": "FEDERAL SUTTON",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "5aa565a10-0617-f79c-8b09-87295ebb7276",
+          "date": "2026-09-19 00:00",
+          "lat": 49.6,
+          "lon": -64.80999755859375,
+          "hours": 1,
+          "shipName": "ANDROS GLORY",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "3240a0e40-09d9-c96e-ce06-4aac47869831",
+          "date": "2026-09-19 14:00",
+          "lat": 49.34,
+          "lon": -64.73999786376953,
+          "hours": 1,
+          "shipName": "NG EXPLORER",
+          "vesselType": "PASSENGER"
+        },
+        {
+          "vesselId": "f1290aa4b-b0f4-6e79-63d3-848313804993",
+          "date": "2026-09-18 13:00",
+          "lat": 49.19,
+          "lon": -64.0199966430664,
+          "hours": 1,
+          "shipName": "NUKUMI",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "3240a0e40-09d9-c96e-ce06-4aac47869831",
+          "date": "2026-09-19 16:00",
+          "lat": 49.26,
+          "lon": -64.20999908447266,
+          "hours": 1,
+          "shipName": "NG EXPLORER",
+          "vesselType": "PASSENGER"
+        },
+        {
+          "vesselId": "50dfab1ed-d9d0-fe70-9327-34b74d428756",
+          "date": "2026-09-18 07:00",
+          "lat": 49.23,
+          "lon": -64.04000091552734,
+          "hours": 1,
+          "shipName": "BBC BREMEN",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "ead2e3e16-6fd0-9b75-6bac-1fc47899f10a",
+          "date": "2026-09-18 18:00",
+          "lat": 49.32,
+          "lon": -64.33999633789062,
+          "hours": 1,
+          "shipName": "CIC OSLO",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "2e40007b2-244d-4e64-a25a-0e5d37884a06",
+          "date": "2026-09-19 22:00",
+          "lat": 49.43,
+          "lon": -64.30999755859375,
+          "hours": 1,
+          "shipName": "NEW ELLY",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "ead2e3e16-6fd0-9b75-6bac-1fc47899f10a",
+          "date": "2026-09-18 17:00",
+          "lat": 49.4,
+          "lon": -64.56999969482422,
+          "hours": 1,
+          "shipName": "CIC OSLO",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "e45dd8d68-8fcc-06da-08b3-5c6852e16f97",
+          "date": "2026-09-19 19:00",
+          "lat": 49.39,
+          "lon": -64.55000305175781,
+          "hours": 1,
+          "shipName": "PAN BICORN",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "e45dd8d68-8fcc-06da-08b3-5c6852e16f97",
+          "date": "2026-09-19 18:00",
+          "lat": 49.38,
+          "lon": -64.31999969482422,
+          "hours": 1,
+          "shipName": "PAN BICORN",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "d5e16d157-7273-d750-6dd6-a98c0e09c06b",
+          "date": "2026-09-19 06:00",
+          "lat": 49.33,
+          "lon": -64.83999633789062,
+          "hours": 1,
+          "shipName": "MSC KILIMANJARO IV",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "f243ed605-5517-9dc5-8688-e385ac35e50c",
+          "date": "2026-09-19 14:00",
+          "lat": 49.34,
+          "lon": -64.77999877929688,
+          "hours": 1,
+          "shipName": "JEAN-JOSEPH",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "d5e16d157-7273-d750-6dd6-a98c0e09c06b",
+          "date": "2026-09-19 07:00",
+          "lat": 49.31,
+          "lon": -64.37000274658203,
+          "hours": 1,
+          "shipName": "MSC KILIMANJARO IV",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "e45dd8d68-8fcc-06da-08b3-5c6852e16f97",
+          "date": "2026-09-19 17:00",
+          "lat": 49.36,
+          "lon": -64.11000061035156,
+          "hours": 1,
+          "shipName": "PAN BICORN",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "4d25074c3-391e-2aa5-5acc-ece1dde3a61e",
+          "date": "2026-09-18 02:00",
+          "lat": 49.41,
+          "lon": -64.91999816894531,
+          "hours": 1,
+          "shipName": "TORM PHILIPPINES",
+          "vesselType": "OTHER_NON_FISHING"
+        },
+        {
+          "vesselId": "1d94712de-e09f-0aad-dc87-b87b6abb025c",
+          "date": "2026-09-19 20:00",
+          "lat": 49.38,
+          "lon": -64.5199966430664,
+          "hours": 1,
+          "shipName": "VISTULA MAERSK",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "2e40007b2-244d-4e64-a25a-0e5d37884a06",
+          "date": "2026-09-19 21:00",
+          "lat": 49.34,
+          "lon": -64.06999969482422,
+          "hours": 1,
+          "shipName": "NEW ELLY",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "35a1647e8-85e2-c314-c586-402cdb675ec9",
+          "date": "2026-09-18 05:00",
+          "lat": 49.22,
+          "lon": -64.02999877929688,
+          "hours": 1,
+          "shipName": "ALGOMA MARINER",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "5aa565a10-0617-f79c-8b09-87295ebb7276",
+          "date": "2026-09-18 23:00",
+          "lat": 49.51,
+          "lon": -64.56999969482422,
+          "hours": 1,
+          "shipName": "ANDROS GLORY",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "2e40007b2-244d-4e64-a25a-0e5d37884a06",
+          "date": "2026-09-19 23:00",
+          "lat": 49.51,
+          "lon": -64.55999755859375,
+          "hours": 1,
+          "shipName": "NEW ELLY",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "1d94712de-e09f-0aad-dc87-b87b6abb025c",
+          "date": "2026-09-19 19:00",
+          "lat": 49.34,
+          "lon": -64.11000061035156,
+          "hours": 1,
+          "shipName": "VISTULA MAERSK",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "3240a0e40-09d9-c96e-ce06-4aac47869831",
+          "date": "2026-09-19 13:00",
+          "lat": 49.34,
+          "lon": -64.80999755859375,
+          "hours": 1,
+          "shipName": "NG EXPLORER",
+          "vesselType": "PASSENGER"
+        },
+        {
+          "vesselId": "7f5ae4e0b-bff6-ee9e-0253-a20fb0178a45",
+          "date": "2026-09-18 16:00",
+          "lat": 49.41,
+          "lon": -64.95999908447266,
+          "hours": 1,
+          "shipName": "MSC CANBERRA III",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "2bc1e1251-1112-f4b3-2722-968eb5a6d196",
+          "date": "2026-09-18 13:00",
+          "lat": 49.23,
+          "lon": -64.02999877929688,
+          "hours": 1,
+          "shipName": "NORWEGIAN JEWEL",
+          "vesselType": "PASSENGER"
+        },
+        {
+          "vesselId": "3240a0e40-09d9-c96e-ce06-4aac47869831",
+          "date": "2026-09-19 15:00",
+          "lat": 49.32,
+          "lon": -64.4800033569336,
+          "hours": 1,
+          "shipName": "NG EXPLORER",
+          "vesselType": "PASSENGER"
+        },
+        {
+          "vesselId": "e45dd8d68-8fcc-06da-08b3-5c6852e16f97",
+          "date": "2026-09-19 20:00",
+          "lat": 49.4,
+          "lon": -64.7300033569336,
+          "hours": 1,
+          "shipName": "PAN BICORN",
+          "vesselType": "CARGO"
+        }
+      ]
+    }
+  ]
+}

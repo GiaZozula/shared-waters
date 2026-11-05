@@ -1,0 +1,81 @@
+# Isolated, fixture-only four-process experiment. Never a production topology.
+name: shared-waters-scale
+x-runtime: &runtime
+  image: shared-waters:local
+  volumes: ['./scripts:/app/experiment:ro']
+  depends_on:
+    migrate: { condition: service_completed_successfully }
+    fake-upstream: { condition: service_healthy }
+x-env: &env
+  DOTENV_CONFIG_PATH: /dev/null
+  DATABASE_URL: postgres://scale_runtime:local_scale_only@db:5432/scale_experiment
+  COORDINATION_DATABASE_URL: postgres://scale_runtime:local_scale_only@db:5432/scale_experiment
+  COLLECTION_ENABLED: 'true'
+  AI_QUESTIONS_ENABLED: 'false'
+  AIS_COLLECTION_MODE: on-demand
+  HOST: 0.0.0.0
+  PORT: '3001'
+x-health: &health
+  test: [CMD, node, -e, 'fetch("http://127.0.0.1:3001/api/health").then(r => { if (!r.ok) process.exit(1) }).catch(() => process.exit(1))']
+  interval: 2s
+  timeout: 5s
+  retries: 30
+x-worker: &worker
+  <<: *runtime
+  command: [node, --import, ./experiment/scale-network-guard.mjs, ./experiment/scale-worker-fixture.mjs]
+  healthcheck:
+    <<: *health
+    test: [CMD, node, -e, 'fetch("http://127.0.0.1:3001/health").then(r => { if (!r.ok) process.exit(1) }).catch(() => process.exit(1))']
+services:
+  db:
+    image: postgres:17-bookworm
+    environment:
+      POSTGRES_USER: scale_owner
+      POSTGRES_PASSWORD: local_owner_only
+      POSTGRES_DB: scale_experiment
+    ports: ['127.0.0.1:55438:5432']
+    volumes: ['scale-postgres:/var/lib/postgresql/data']
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U scale_owner -d scale_experiment]
+      interval: 2s
+      timeout: 5s
+      retries: 30
+  migrate:
+    image: shared-waters:local
+    volumes: ['./scripts:/app/experiment:ro']
+    depends_on:
+      db: { condition: service_healthy }
+    environment:
+      TEST_DATABASE_URL: postgres://scale_owner:local_owner_only@db:5432/scale_experiment
+    command: [node, ./experiment/scale-prepare.mjs]
+  fake-upstream:
+    image: shared-waters:local
+    volumes: ['./scripts:/app/experiment:ro']
+    environment: { PORT: '3001' }
+    ports: ['127.0.0.1:5305:3001']
+    command: [node, ./experiment/scale-upstream-fixture.mjs]
+    healthcheck:
+      <<: *health
+      test: [CMD, node, -e, 'fetch("http://127.0.0.1:3001/metrics").then(r => { if (!r.ok) process.exit(1) }).catch(() => process.exit(1))']
+  api_a:
+    <<: *runtime
+    environment: { <<: *env, ROLE: api }
+    ports: ['127.0.0.1:5301:3001']
+    command: [node, --import, ./experiment/scale-network-guard.mjs, build/server/index.js]
+    healthcheck: *health
+  api_b:
+    <<: *runtime
+    environment: { <<: *env, ROLE: api }
+    ports: ['127.0.0.1:5302:3001']
+    command: [node, --import, ./experiment/scale-network-guard.mjs, build/server/index.js]
+    healthcheck: *health
+  worker_a:
+    <<: *worker
+    environment: { <<: *env, ROLE: worker, SCALE_UPSTREAM_URL: 'http://fake-upstream:3001', SCALE_WORKER_TAG: a }
+    ports: ['127.0.0.1:5311:3001']
+  worker_b:
+    <<: *worker
+    environment: { <<: *env, ROLE: worker, SCALE_UPSTREAM_URL: 'http://fake-upstream:3001', SCALE_WORKER_TAG: b }
+    ports: ['127.0.0.1:5312:3001']
+volumes:
+  scale-postgres:

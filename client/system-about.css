@@ -1,0 +1,33 @@
+/* System reuses the scene's About content and panel interaction without loading scene styles. */
+.about-trigger { position: fixed; bottom: max(24px, env(safe-area-inset-bottom)); left: 28px; z-index: 76; border: 0; background: transparent; width: 44px; height: 44px; padding: 0; display: grid; place-items: center; line-height: 1; }
+.about-trigger .panel-symbol { display: block; font: 30px/1 'IBM Plex Mono', monospace; text-shadow: 0 2px 5px #000b, 0 0 12px #141817; }
+.about-trigger:hover, .about-trigger[aria-expanded='true'] { background: transparent; color: #e7ecdf; }
+.about-trigger.is-open { visibility: hidden; pointer-events: none; }
+.about-membrane { position: fixed; inset: 0 auto 0 0; z-index: 75; width: min(460px, 100vw); padding: 100px 30px 84px; display: flex; flex-direction: column; background: #141817; color: #c5cdbf; border-right: 1px solid #5c6460; transform: translateX(-100%); visibility: hidden; transition: transform 520ms cubic-bezier(.16,1,.3,1), visibility 520ms; }
+.about-membrane.is-open { transform: translateX(0); visibility: visible; }
+.about-header { display: grid; grid-template-columns: 1fr 40px; align-items: start; gap: 14px 12px; flex: none; margin-bottom: 26px; }
+.about-title { margin: 0; font: 400 48px/1.1 'Basteleur', serif; letter-spacing: -.035em; color: #d9dcd1; }
+.about-close { padding: 0; border: 0; width: 40px; height: 40px; font-size: 24px; }
+.about-content { flex: 1; min-height: 0; overflow-y: auto; padding-right: 8px; scrollbar-width: thin; scrollbar-color: #5c6460 #141817; }
+.about-copy { margin: 0 0 20px; }
+.panel-lead { color: #d9dcd1; }
+.panel-wave { grid-column: 1 / -1; display: flex; align-items: center; gap: 3px; height: 30px; color: #adb9ae; }
+.panel-wave span { display: inline-block; font: 27px/1 'Apple Symbols','Noto Sans Symbols 2',serif; }
+.about-membrane.is-open .panel-wave span { animation: system-panel-wave 2.8s ease-in-out infinite; }
+.about-membrane .panel-wave span:nth-child(2) { animation-delay: .18s; }
+.about-membrane .panel-wave span:nth-child(3) { animation-delay: .36s; }
+@keyframes system-panel-wave { 0%,50%,100% { transform: translateY(2px); } 25% { transform: translateY(-5px); } 75% { transform: translateY(5px); } }
+.about-section { padding: 16px 0; border-top: 1px solid #5c646066; }
+.about-section:last-of-type { margin-bottom: 24px; border-bottom: 1px solid #5c646066; }
+.about-section > summary { list-style: none; cursor: pointer; font: 400 24px/1.4 'Basteleur', serif; color: #d0d6c9; }
+.about-section > summary::-webkit-details-marker { display: none; }
+.about-section > summary::before { content: '+'; display: inline-block; width: 24px; font: 16px/1 'IBM Plex Mono', monospace; color: #adb9ae; }
+.about-section[open] > summary::before { content: '−'; }
+.about-section .about-copy { margin: 18px 0 0; }
+.about-membrane a { color: inherit; text-underline-offset: 4px; }
+.about-controls { margin: 22px 0 0; }
+.about-controls > div + div { margin-top: 22px; }
+.about-controls dt { color: #d0d6c9; font-weight: 600; }
+.about-controls dd { margin: 6px 0 0; color: #adb9ae; }
+@media(max-width:760px) { .about-membrane { width: 100%; padding: 100px 24px 84px; } .about-title { font-size: 48px; } }
+@media(prefers-reduced-motion:reduce) { .about-membrane { transition: none; } .about-membrane.is-open .panel-wave span { animation: none; } }

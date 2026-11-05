@@ -1,0 +1,23 @@
+.readiness-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 12px; }
+.readiness-card { min-height: 0; padding: 16px; background: #0c1412; border: 1px solid #24302c; }
+.readiness-card.is-selected { border-color: #d5ddd4; }
+.readiness-card-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+.readiness-card h3 { margin: 0; font: 400 20px/1.4 'IBM Plex Mono', ui-monospace, monospace; }
+.readiness-card p, .records p, .questions p { color: #c5d0c6; overflow-wrap: anywhere; }
+.readiness-badge { font-size: 16px; letter-spacing: .04em; text-transform: uppercase; color: #9eaea4; }
+.readiness-badge.ready { color: #b7d7be; }
+.readiness-badge.attention { color: #e1c48a; }
+.readiness-badge.unavailable { color: #e2a39a; }
+.readiness-meta { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; margin: 14px 0 0; padding-top: 12px; border-top: 1px solid #24302c; font-size: 16px; }
+.readiness-meta dt { color: #8ea096; }
+.readiness-meta dd { margin: 0; text-align: right; overflow-wrap: anywhere; }
+.readiness-error { color: #e2a39a !important; }
+.records label { display: block; margin: 12px 0 6px; }
+.records input[type='range'] { width: min(100%, 720px); }
+.records ul { padding-left: 18px; }
+.mode-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.records p, .records li, .records button { overflow-wrap: anywhere; }
+@media (max-width: 640px) {
+  .readiness-meta { grid-template-columns: 1fr; }
+  .readiness-meta dd { text-align: left; }
+}

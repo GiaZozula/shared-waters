@@ -1,0 +1,7 @@
+.zone-scene{max-width:960px;margin:18px 0;padding:12px;border:1px solid #b5ced2;background:#ecf4f5;color:#173c46;font:14px/1.45 system-ui,sans-serif}
+.zone-scene>div{width:100%;min-height:280px}
+.zone-scene canvas{display:block;max-width:100%}
+.zone-scene p{margin:10px 2px 2px}
+.source-credit{display:block;overflow-wrap:anywhere}
+@media(max-width:540px){.zone-scene{font-size:13px}.source-credit{display:block;line-height:1.4}}
+.gfw-key{color:#ce713a}.ais-key{color:#245ac3}.glider-key{color:#5a327f}

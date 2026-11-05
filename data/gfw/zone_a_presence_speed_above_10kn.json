@@ -1,0 +1,737 @@
+{
+  "entries": [
+    {
+      "public-global-presence:v4.0": [
+        {
+          "vesselId": "8517dc9c3-3b6d-f18d-ea23-3ce4035168f1",
+          "date": "2026-09-13 16:00",
+          "lat": 49.36,
+          "lon": -64.13999938964844,
+          "hours": 1,
+          "shipName": "POLSTEAM PILE",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "6aa3c43e8-8e0e-bf8a-f37f-3d6b3d3ae1ac",
+          "date": "2026-09-14 02:00",
+          "lat": 49.36,
+          "lon": -64.13999938964844,
+          "hours": 1,
+          "shipName": "CAP GRACE",
+          "vesselType": "OTHER_NON_FISHING"
+        },
+        {
+          "vesselId": "47dc40f82-2769-f563-80d8-5a80ed7ddb85",
+          "date": "2026-09-15 09:00",
+          "lat": 49.26,
+          "lon": -64.1500015258789,
+          "hours": 1,
+          "shipName": "MSC ANGELA",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "0cab72bc6-6fe7-4a15-7d92-4235e5138beb",
+          "date": "2026-09-14 07:00",
+          "lat": 49.22,
+          "lon": -64.0199966430664,
+          "hours": 1,
+          "shipName": "VALVERDE",
+          "vesselType": "OTHER_NON_FISHING"
+        },
+        {
+          "vesselId": "a9549c49f-f39d-7c76-9d88-f5f972c96407",
+          "date": "2026-09-13 01:00",
+          "lat": 49.25,
+          "lon": -64.13999938964844,
+          "hours": 1,
+          "shipName": "LAURENCE FRANCOISE",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "db0d03930-0f5e-6afa-0f9e-5003696e78e0",
+          "date": "2026-09-15 11:00",
+          "lat": 49.31,
+          "lon": -64.45999908447266,
+          "hours": 1,
+          "shipName": "CMA CGM KAILAS",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "20a773a1e-e139-9287-b024-3f61998901b1",
+          "date": "2026-09-13 07:00",
+          "lat": 49.25,
+          "lon": -64.12000274658203,
+          "hours": 1,
+          "shipName": "HELENA G",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "20a773a1e-e139-9287-b024-3f61998901b1",
+          "date": "2026-09-13 05:00",
+          "lat": 49.34,
+          "lon": -64.91000366210938,
+          "hours": 1,
+          "shipName": "HELENA G",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "a5f3b7bc0-0de6-8772-81c5-15aac0c727dd",
+          "date": "2026-09-13 07:00",
+          "lat": 49.35,
+          "lon": -64.97000122070312,
+          "hours": 1,
+          "shipName": "BLACKY",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "96d2ffd7e-edcb-06cb-7c03-a8c00869ee57",
+          "date": "2026-09-15 08:00",
+          "lat": 49.41,
+          "lon": -64.83999633789062,
+          "hours": 1,
+          "shipName": "MSC BARBADOS",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "96d2ffd7e-edcb-06cb-7c03-a8c00869ee57",
+          "date": "2026-09-15 06:00",
+          "lat": 49.34,
+          "lon": -64.05000305175781,
+          "hours": 1,
+          "shipName": "MSC BARBADOS",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "1881ac026-637b-174d-28d0-6d306203fe0e",
+          "date": "2026-09-13 21:00",
+          "lat": 49.33,
+          "lon": -64.73999786376953,
+          "hours": 1,
+          "shipName": "OCEANEX CONNAIGRA",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "a5f3b7bc0-0de6-8772-81c5-15aac0c727dd",
+          "date": "2026-09-13 10:00",
+          "lat": 49.29,
+          "lon": -64.2300033569336,
+          "hours": 1,
+          "shipName": "BLACKY",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "1dc01a075-58c5-d7dd-1d59-baa8e2697b17",
+          "date": "2026-09-13 10:00",
+          "lat": 49.36,
+          "lon": -64.11000061035156,
+          "hours": 1,
+          "shipName": "GLASGOW EXPRESS",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "f8fcd44b0-082c-fcb5-71a2-fc1017ab7ea0",
+          "date": "2026-09-16 23:00",
+          "lat": 49.21,
+          "lon": -64.0199966430664,
+          "hours": 1,
+          "shipName": "EM KEA",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "8517dc9c3-3b6d-f18d-ea23-3ce4035168f1",
+          "date": "2026-09-13 18:00",
+          "lat": 49.4,
+          "lon": -64.68000030517578,
+          "hours": 1,
+          "shipName": "POLSTEAM PILE",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "1dc01a075-58c5-d7dd-1d59-baa8e2697b17",
+          "date": "2026-09-13 11:00",
+          "lat": 49.39,
+          "lon": -64.72000122070312,
+          "hours": 1,
+          "shipName": "GLASGOW EXPRESS",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "d5e16d157-7273-d750-6dd6-a98c0e09c06b",
+          "date": "2026-09-14 14:00",
+          "lat": 49.4,
+          "lon": -64.70999908447266,
+          "hours": 1,
+          "shipName": "MSC KILIMANJARO IV",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "8517dc9c3-3b6d-f18d-ea23-3ce4035168f1",
+          "date": "2026-09-13 17:00",
+          "lat": 49.39,
+          "lon": -64.45999908447266,
+          "hours": 1,
+          "shipName": "POLSTEAM PILE",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "461deb436-6a6f-6b19-07c7-83ec31a30589",
+          "date": "2026-09-13 09:00",
+          "lat": 49.39,
+          "lon": -64.54000091552734,
+          "hours": 1,
+          "shipName": "DETROIT EXPRESS",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "e0b5c5850-0be4-c717-ae16-67d2bf921ce7",
+          "date": "2026-09-13 04:00",
+          "lat": 49.32,
+          "lon": -64.55000305175781,
+          "hours": 1,
+          "shipName": "LAPIS LAZULI",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "96d2ffd7e-edcb-06cb-7c03-a8c00869ee57",
+          "date": "2026-09-15 09:00",
+          "lat": 49.41,
+          "lon": -64.87999725341797,
+          "hours": 1,
+          "shipName": "MSC BARBADOS",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "0c56d68d9-9525-df61-69b9-68df66d6a752",
+          "date": "2026-09-14 12:00",
+          "lat": 49.22,
+          "lon": -64.02999877929688,
+          "hours": 1,
+          "shipName": "ONEGO RIO",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "0cab72bc6-6fe7-4a15-7d92-4235e5138beb",
+          "date": "2026-09-14 05:00",
+          "lat": 49.32,
+          "lon": -64.43000030517578,
+          "hours": 1,
+          "shipName": "VALVERDE",
+          "vesselType": "OTHER_NON_FISHING"
+        },
+        {
+          "vesselId": "54ba4fdbb-bf84-b484-3030-f983db5d6b0d",
+          "date": "2026-09-16 06:00",
+          "lat": 49.42,
+          "lon": -64.98999786376953,
+          "hours": 1,
+          "shipName": "BBC BASEL",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "a7414d323-36c4-d4a3-37cc-03948af24a14",
+          "date": "2026-09-14 07:00",
+          "lat": 49.37,
+          "lon": -64.47000122070312,
+          "hours": 1,
+          "shipName": "PACIFIC SARAH",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "81a34fadc-c325-90f2-7eec-52afc80b7724",
+          "date": "2026-09-15 06:00",
+          "lat": 49.41,
+          "lon": -64.86000061035156,
+          "hours": 1,
+          "shipName": "FEDERAL CEDAR",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "82b619374-492e-6ed8-c4fa-7be4f2c95d20",
+          "date": "2026-09-15 10:00",
+          "lat": 49.3,
+          "lon": -64.26000213623047,
+          "hours": 1,
+          "shipName": "P.MARSEILLE",
+          "vesselType": "OTHER_NON_FISHING"
+        },
+        {
+          "vesselId": "82b619374-492e-6ed8-c4fa-7be4f2c95d20",
+          "date": "2026-09-15 11:00",
+          "lat": 49.27,
+          "lon": -64.16999816894531,
+          "hours": 1,
+          "shipName": "P.MARSEILLE",
+          "vesselType": "OTHER_NON_FISHING"
+        },
+        {
+          "vesselId": "610234d8d-d2b3-cf76-727f-89e0a717428a",
+          "date": "2026-09-14 16:00",
+          "lat": 49.26,
+          "lon": -64.18000030517578,
+          "hours": 1,
+          "shipName": "VOLENDAM",
+          "vesselType": "PASSENGER"
+        },
+        {
+          "vesselId": "1dc01a075-58c5-d7dd-1d59-baa8e2697b17",
+          "date": "2026-09-13 12:00",
+          "lat": 49.39,
+          "lon": -64.75,
+          "hours": 1,
+          "shipName": "GLASGOW EXPRESS",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "91393263a-a0e0-be71-a670-0a5ebf76c85e",
+          "date": "2026-09-13 11:00",
+          "lat": 49.42,
+          "lon": -64.76000213623047,
+          "hours": 1,
+          "shipName": "OCEANEX AVALON",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "2bc1e1251-1112-f4b3-2722-968eb5a6d196",
+          "date": "2026-09-13 18:00",
+          "lat": 49.39,
+          "lon": -64.56999969482422,
+          "hours": 1,
+          "shipName": "NORWEGIAN JEWEL",
+          "vesselType": "PASSENGER"
+        },
+        {
+          "vesselId": "a7414d323-36c4-d4a3-37cc-03948af24a14",
+          "date": "2026-09-14 05:00",
+          "lat": 49.54,
+          "lon": -64.98999786376953,
+          "hours": 1,
+          "shipName": "PACIFIC SARAH",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "a7414d323-36c4-d4a3-37cc-03948af24a14",
+          "date": "2026-09-14 08:00",
+          "lat": 49.31,
+          "lon": -64.2699966430664,
+          "hours": 1,
+          "shipName": "PACIFIC SARAH",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "610234d8d-d2b3-cf76-727f-89e0a717428a",
+          "date": "2026-09-14 15:00",
+          "lat": 49.31,
+          "lon": -64.52999877929688,
+          "hours": 1,
+          "shipName": "VOLENDAM",
+          "vesselType": "PASSENGER"
+        },
+        {
+          "vesselId": "a9e609a98-8059-75db-9662-2792dcbc1c6d",
+          "date": "2026-09-16 18:00",
+          "lat": 49.41,
+          "lon": -64.9800033569336,
+          "hours": 1,
+          "shipName": "APOGEE",
+          "vesselType": "PASSENGER"
+        },
+        {
+          "vesselId": "e0b5c5850-0be4-c717-ae16-67d2bf921ce7",
+          "date": "2026-09-13 05:00",
+          "lat": 49.31,
+          "lon": -64.4000015258789,
+          "hours": 1,
+          "shipName": "LAPIS LAZULI",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "20a773a1e-e139-9287-b024-3f61998901b1",
+          "date": "2026-09-13 04:00",
+          "lat": 49.34,
+          "lon": -64.95999908447266,
+          "hours": 1,
+          "shipName": "HELENA G",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "db0d03930-0f5e-6afa-0f9e-5003696e78e0",
+          "date": "2026-09-15 10:00",
+          "lat": 49.32,
+          "lon": -64.52999877929688,
+          "hours": 1,
+          "shipName": "CMA CGM KAILAS",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "af4137da4-420d-89d2-2954-71a007e894b3",
+          "date": "2026-09-13 09:00",
+          "lat": 49.35,
+          "lon": -64.91999816894531,
+          "hours": 1,
+          "shipName": "UM EHIME",
+          "vesselType": "INSUFFICIENT_DATA"
+        },
+        {
+          "vesselId": "82b619374-492e-6ed8-c4fa-7be4f2c95d20",
+          "date": "2026-09-15 09:00",
+          "lat": 49.34,
+          "lon": -64.88999938964844,
+          "hours": 1,
+          "shipName": "P.MARSEILLE",
+          "vesselType": "OTHER_NON_FISHING"
+        },
+        {
+          "vesselId": "3053d8527-739a-61ad-3250-52c2b61e9595",
+          "date": "2026-09-17 10:00",
+          "lat": 49.35,
+          "lon": -64.95999908447266,
+          "hours": 1,
+          "shipName": "EQUINOX EAGLE",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "9f23a5c26-69e7-be5a-0495-fddcb4c5ffd7",
+          "date": "2026-09-13 18:00",
+          "lat": 49.34,
+          "lon": -64.80999755859375,
+          "hours": 1,
+          "shipName": "TEAM BRAVO",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "fd36fa01d-d6f6-b26d-313a-2e67e56677ca",
+          "date": "2026-09-16 14:00",
+          "lat": 49.21,
+          "lon": -64,
+          "hours": 1,
+          "shipName": "FRONTIER WISH",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "82b619374-492e-6ed8-c4fa-7be4f2c95d20",
+          "date": "2026-09-15 08:00",
+          "lat": 49.35,
+          "lon": -64.95999908447266,
+          "hours": 1,
+          "shipName": "P.MARSEILLE",
+          "vesselType": "OTHER_NON_FISHING"
+        },
+        {
+          "vesselId": "6aa3c43e8-8e0e-bf8a-f37f-3d6b3d3ae1ac",
+          "date": "2026-09-14 03:00",
+          "lat": 49.38,
+          "lon": -64.41999816894531,
+          "hours": 1,
+          "shipName": "CAP GRACE",
+          "vesselType": "OTHER_NON_FISHING"
+        },
+        {
+          "vesselId": "47dc40f82-2769-f563-80d8-5a80ed7ddb85",
+          "date": "2026-09-15 07:00",
+          "lat": 49.32,
+          "lon": -64.56999969482422,
+          "hours": 1,
+          "shipName": "MSC ANGELA",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "5bd084088-80f6-e0c8-f77c-f967d4a83ba6",
+          "date": "2026-09-14 02:00",
+          "lat": 49.37,
+          "lon": -64.31999969482422,
+          "hours": 1,
+          "shipName": "SEVEN SEAS SPLENDOR",
+          "vesselType": "PASSENGER"
+        },
+        {
+          "vesselId": "e0b5c5850-0be4-c717-ae16-67d2bf921ce7",
+          "date": "2026-09-13 03:00",
+          "lat": 49.34,
+          "lon": -64.94999694824219,
+          "hours": 1,
+          "shipName": "LAPIS LAZULI",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "271fddedd-d319-7cd2-3a7c-9c0965782e3c",
+          "date": "2026-09-15 03:00",
+          "lat": 49.31,
+          "lon": -64.37000274658203,
+          "hours": 1,
+          "shipName": "PROMETHEUS LIGHT",
+          "vesselType": "OTHER_NON_FISHING"
+        },
+        {
+          "vesselId": "0cab72bc6-6fe7-4a15-7d92-4235e5138beb",
+          "date": "2026-09-14 04:00",
+          "lat": 49.33,
+          "lon": -64.7699966430664,
+          "hours": 1,
+          "shipName": "VALVERDE",
+          "vesselType": "OTHER_NON_FISHING"
+        },
+        {
+          "vesselId": "0c56d68d9-9525-df61-69b9-68df66d6a752",
+          "date": "2026-09-14 11:00",
+          "lat": 49.31,
+          "lon": -64.33999633789062,
+          "hours": 1,
+          "shipName": "ONEGO RIO",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "16b5449df-ffb6-4bcf-7204-ce7216f20468",
+          "date": "2026-09-17 09:00",
+          "lat": 49.21,
+          "lon": -64.0199966430664,
+          "hours": 1,
+          "shipName": "BBC ROSTOV",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "5a8ce6c8c-ca0e-8c9b-9691-d9c5da208cc7",
+          "date": "2026-09-15 10:00",
+          "lat": 49.27,
+          "lon": -64.18000030517578,
+          "hours": 1,
+          "shipName": "ARCADIA",
+          "vesselType": "PASSENGER"
+        },
+        {
+          "vesselId": "461deb436-6a6f-6b19-07c7-83ec31a30589",
+          "date": "2026-09-13 10:00",
+          "lat": 49.39,
+          "lon": -64.63999938964844,
+          "hours": 1,
+          "shipName": "DETROIT EXPRESS",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "20a773a1e-e139-9287-b024-3f61998901b1",
+          "date": "2026-09-13 06:00",
+          "lat": 49.32,
+          "lon": -64.54000091552734,
+          "hours": 1,
+          "shipName": "HELENA G",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "a5f3b7bc0-0de6-8772-81c5-15aac0c727dd",
+          "date": "2026-09-13 09:00",
+          "lat": 49.29,
+          "lon": -64.23999786376953,
+          "hours": 1,
+          "shipName": "BLACKY",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "a5f3b7bc0-0de6-8772-81c5-15aac0c727dd",
+          "date": "2026-09-13 08:00",
+          "lat": 49.34,
+          "lon": -64.79000091552734,
+          "hours": 1,
+          "shipName": "BLACKY",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "e0b5c5850-0be4-c717-ae16-67d2bf921ce7",
+          "date": "2026-09-13 06:00",
+          "lat": 49.24,
+          "lon": -64.06999969482422,
+          "hours": 1,
+          "shipName": "LAPIS LAZULI",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "96d2ffd7e-edcb-06cb-7c03-a8c00869ee57",
+          "date": "2026-09-15 07:00",
+          "lat": 49.38,
+          "lon": -64.51000213623047,
+          "hours": 1,
+          "shipName": "MSC BARBADOS",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "0cab72bc6-6fe7-4a15-7d92-4235e5138beb",
+          "date": "2026-09-14 06:00",
+          "lat": 49.27,
+          "lon": -64.18000030517578,
+          "hours": 1,
+          "shipName": "VALVERDE",
+          "vesselType": "OTHER_NON_FISHING"
+        },
+        {
+          "vesselId": "d5e16d157-7273-d750-6dd6-a98c0e09c06b",
+          "date": "2026-09-14 13:00",
+          "lat": 49.38,
+          "lon": -64.45999908447266,
+          "hours": 1,
+          "shipName": "MSC KILIMANJARO IV",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "a7414d323-36c4-d4a3-37cc-03948af24a14",
+          "date": "2026-09-14 09:00",
+          "lat": 49.24,
+          "lon": -64.08000183105469,
+          "hours": 1,
+          "shipName": "PACIFIC SARAH",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "81a34fadc-c325-90f2-7eec-52afc80b7724",
+          "date": "2026-09-15 04:00",
+          "lat": 49.37,
+          "lon": -64.20999908447266,
+          "hours": 1,
+          "shipName": "FEDERAL CEDAR",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "91393263a-a0e0-be71-a670-0a5ebf76c85e",
+          "date": "2026-09-13 12:00",
+          "lat": 49.42,
+          "lon": -64.8499984741211,
+          "hours": 1,
+          "shipName": "OCEANEX AVALON",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "b02edeb9a-a05b-02d5-02bd-e84c30ca4a17",
+          "date": "2026-09-15 12:00",
+          "lat": 49.33,
+          "lon": -64.7699966430664,
+          "hours": 1,
+          "shipName": "HURON",
+          "vesselType": "OTHER_NON_FISHING"
+        },
+        {
+          "vesselId": "271fddedd-d319-7cd2-3a7c-9c0965782e3c",
+          "date": "2026-09-15 02:00",
+          "lat": 49.32,
+          "lon": -64.5,
+          "hours": 1,
+          "shipName": "PROMETHEUS LIGHT",
+          "vesselType": "OTHER_NON_FISHING"
+        },
+        {
+          "vesselId": "1881ac026-637b-174d-28d0-6d306203fe0e",
+          "date": "2026-09-13 23:00",
+          "lat": 49.26,
+          "lon": -64.16999816894531,
+          "hours": 1,
+          "shipName": "OCEANEX CONNAIGRA",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "0c56d68d9-9525-df61-69b9-68df66d6a752",
+          "date": "2026-09-14 10:00",
+          "lat": 49.32,
+          "lon": -64.58000183105469,
+          "hours": 1,
+          "shipName": "ONEGO RIO",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "a7414d323-36c4-d4a3-37cc-03948af24a14",
+          "date": "2026-09-14 06:00",
+          "lat": 49.47,
+          "lon": -64.76000213623047,
+          "hours": 1,
+          "shipName": "PACIFIC SARAH",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "81a34fadc-c325-90f2-7eec-52afc80b7724",
+          "date": "2026-09-15 05:00",
+          "lat": 49.39,
+          "lon": -64.4800033569336,
+          "hours": 1,
+          "shipName": "FEDERAL CEDAR",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "91393263a-a0e0-be71-a670-0a5ebf76c85e",
+          "date": "2026-09-16 21:00",
+          "lat": 49.34,
+          "lon": -64.93000030517578,
+          "hours": 1,
+          "shipName": "OCEANEX AVALON",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "1881ac026-637b-174d-28d0-6d306203fe0e",
+          "date": "2026-09-13 22:00",
+          "lat": 49.33,
+          "lon": -64.72000122070312,
+          "hours": 1,
+          "shipName": "OCEANEX CONNAIGRA",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "461deb436-6a6f-6b19-07c7-83ec31a30589",
+          "date": "2026-09-13 08:00",
+          "lat": 49.35,
+          "lon": -64.11000061035156,
+          "hours": 1,
+          "shipName": "DETROIT EXPRESS",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "47dc40f82-2769-f563-80d8-5a80ed7ddb85",
+          "date": "2026-09-15 08:00",
+          "lat": 49.27,
+          "lon": -64.19999694824219,
+          "hours": 1,
+          "shipName": "MSC ANGELA",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "6aa3c43e8-8e0e-bf8a-f37f-3d6b3d3ae1ac",
+          "date": "2026-09-14 04:00",
+          "lat": 49.4,
+          "lon": -64.83999633789062,
+          "hours": 1,
+          "shipName": "CAP GRACE",
+          "vesselType": "OTHER_NON_FISHING"
+        },
+        {
+          "vesselId": "1dc01a075-58c5-d7dd-1d59-baa8e2697b17",
+          "date": "2026-09-13 09:00",
+          "lat": 49.36,
+          "lon": -64.11000061035156,
+          "hours": 1,
+          "shipName": "GLASGOW EXPRESS",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "a9549c49f-f39d-7c76-9d88-f5f972c96407",
+          "date": "2026-09-13 00:00",
+          "lat": 49.32,
+          "lon": -64.47000122070312,
+          "hours": 1,
+          "shipName": "LAURENCE FRANCOISE",
+          "vesselType": "CARGO"
+        },
+        {
+          "vesselId": "5bd084088-80f6-e0c8-f77c-f967d4a83ba6",
+          "date": "2026-09-14 01:00",
+          "lat": 49.27,
+          "lon": -64.02999877929688,
+          "hours": 1,
+          "shipName": "SEVEN SEAS SPLENDOR",
+          "vesselType": "PASSENGER"
+        },
+        {
+          "vesselId": "5bd084088-80f6-e0c8-f77c-f967d4a83ba6",
+          "date": "2026-09-14 03:00",
+          "lat": 49.4,
+          "lon": -64.66999816894531,
+          "hours": 1,
+          "shipName": "SEVEN SEAS SPLENDOR",
+          "vesselType": "PASSENGER"
+        }
+      ]
+    }
+  ]
+}

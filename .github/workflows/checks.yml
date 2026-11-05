@@ -1,0 +1,106 @@
+name: Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: checks-${{ github.workflow }}-${{ github.ref }}
+  # Never cancel a main workflow while its production migration/deployment is active.
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: shared_water
+          POSTGRES_PASSWORD: local_ci_only
+          POSTGRES_DB: shared_water_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U shared_water -d shared_water_test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      TEST_DATABASE_URL: postgres://shared_water:local_ci_only@127.0.0.1:5432/shared_water_test
+      DOTENV_CONFIG_PATH: /dev/null
+      AI_QUESTIONS_ENABLED: 'false'
+      COLLECTION_ENABLED: 'false'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci
+      - run: npm run build
+      - run: npm run test:unit
+      - run: npm run test:store
+      - name: Install matching PostgreSQL backup tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          source /etc/os-release
+          case "${ID}:${VERSION_CODENAME}" in
+            ubuntu:jammy|ubuntu:noble|ubuntu:resolute) ;;
+            *) echo "Unsupported runner distribution for the reviewed PGDG setup" >&2; exit 1 ;;
+          esac
+          curl --fail --silent --show-error --location --retry 3 --proto '=https' --tlsv1.2 \
+            https://www.postgresql.org/media/keys/ACCC4CF8.asc -o "$RUNNER_TEMP/pgdg.asc"
+          test "$(gpg --batch --show-keys --with-colons "$RUNNER_TEMP/pgdg.asc" | awk -F: '$1 == "fpr" { print $10; exit }')" \
+            = 'B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8'
+          sudo install -d -m 0755 /usr/share/postgresql-common/pgdg
+          sudo install -m 0644 "$RUNNER_TEMP/pgdg.asc" /usr/share/postgresql-common/pgdg/apt.postgresql.org.asc
+          sudo tee /etc/apt/sources.list.d/pgdg.sources > /dev/null <<EOF
+          Types: deb
+          URIs: https://apt.postgresql.org/pub/repos/apt
+          Suites: ${VERSION_CODENAME}-pgdg
+          Architectures: $(dpkg --print-architecture)
+          Components: main
+          Signed-By: /usr/share/postgresql-common/pgdg/apt.postgresql.org.asc
+          EOF
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends postgresql-client-17
+      - run: npm run test:backup
+        env:
+          BACKUP_PG_BIN: /usr/lib/postgresql/17/bin
+      - run: npm run test:compiled
+      - run: node --test scripts/deploy-render.test.mjs
+
+  container:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: docker compose up --build --wait --wait-timeout 180
+      - run: node scripts/container-smoke.mjs
+      - name: Verify runtime image boundary
+        run: |
+          docker compose exec -T app sh -ec 'test "$(id -u)" != 0; test ! -e .env; test ! -e .local; test ! -e server; test ! -e node_modules/tsx; test ! -e node_modules/typescript'
+          docker compose exec -T app node build/server/verify-schema.js
+          docker compose run --rm migrate
+          docker compose exec -T app node build/server/verify-schema.js
+      - name: Prepare the host experiment driver
+        run: |
+          npm ci
+          npm run build:server
+      - name: Four-process ownership experiment with fake upstreams
+        run: |
+          docker compose --env-file /dev/null -f compose.scale.yaml up --wait --wait-timeout 180
+          TEST_DATABASE_URL=postgres://scale_owner:local_owner_only@127.0.0.1:55438/scale_experiment node scripts/collection-experiment.mjs --compose
+      - if: always()
+        run: docker compose --env-file /dev/null -f compose.scale.yaml down --volumes
+      - if: always()
+        run: docker compose down --volumes

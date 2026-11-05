@@ -1,0 +1,14 @@
+.api-warmup { position: fixed; top: max(16px, env(safe-area-inset-top)); right: 28px; z-index: 80; width: min(360px, calc(100vw - 56px)); color: #e1e5dd; font: 12px/1.6 'IBM Plex Mono', monospace; text-shadow: 0 1px 4px #0009; }
+.api-warmup__line { display: flex; align-items: baseline; gap: 12px; }
+.api-warmup [role='status'] { flex: 1; }
+.api-warmup button { flex: none; min-height: 0; padding: 0; border: 0; background: none; color: inherit; font: inherit; text-decoration: underline; text-underline-offset: 4px; }
+.api-warmup button[hidden] { display: none; }
+.api-warmup button[aria-disabled='true'] { opacity: .55; cursor: wait; }
+.api-warmup > span { display: block; color: #b8c3bd; }
+.api-warmup .api-warmup__indicator { display: block; margin-left: auto; color: #e1e5dd; text-decoration: none; line-height: 1.6; cursor: pointer; }
+.api-warmup .api-warmup__indicator[hidden] { display: none; }
+.api-warmup.is-connected .api-warmup__line { opacity: 0; visibility: hidden; transform: translateY(-4px); text-align: right; margin-top: 8px; }
+.api-warmup .api-warmup__line { transition: opacity 180ms, transform 180ms, visibility 180ms; }
+.api-warmup.is-connected:is(:hover,:focus-within,.is-details-open) .api-warmup__line { opacity: 1; visibility: visible; transform: none; }
+@media(max-width:760px) { body:has(.system-navigation) .api-warmup { top: 64px; background: #141817; } body:has(.system-navigation) main { padding-top: 145px; } }
+@media(prefers-reduced-motion:reduce) { .api-warmup .api-warmup__line { transition: none; transform: none; } }

@@ -1,0 +1,38 @@
+{
+  "method": "POST",
+  "url_without_token": "https://gateway.api.globalfishingwatch.org/v3/4wings/report?spatial-resolution=HIGH&temporal-resolution=HOURLY&group-by=VESSEL_ID&datasets[0]=public-global-presence:latest&date-range=2026-09-17,2026-10-02&format=JSON&spatial-aggregation=false",
+  "body": {
+    "geojson": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -65.0,
+            49.683333
+          ],
+          [
+            -65.0,
+            49.333333
+          ],
+          [
+            -64.0,
+            49.183333
+          ],
+          [
+            -64.0,
+            49.366667
+          ],
+          [
+            -65.0,
+            49.683333
+          ]
+        ]
+      ]
+    }
+  },
+  "note": "Fetched 3 November 2026. Files retain only 18\u201319 September rows from the requested interval. Original 13\u201317 September inputs remain unchanged.",
+  "filters": {
+    "lower": "speed in ('<2','2-4','4-6','6-10')",
+    "upper": "speed in ('10-15','15-25','>25')"
+  }
+}

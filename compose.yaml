@@ -1,0 +1,48 @@
+name: shared-waters
+services:
+  db:
+    image: postgres:17-bookworm
+    environment:
+      POSTGRES_USER: shared_water
+      POSTGRES_PASSWORD: local_owner_only
+      POSTGRES_DB: shared_water
+    volumes:
+      - postgres:/var/lib/postgresql/data
+      - ./deploy/init-local.sql:/docker-entrypoint-initdb.d/01-runtime.sql:ro
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U shared_water -d shared_water]
+      interval: 2s
+      timeout: 5s
+      retries: 30
+  migrate:
+    image: shared-waters:local
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DOTENV_CONFIG_PATH: /dev/null
+      MIGRATION_DATABASE_URL: postgres://shared_water:local_owner_only@db:5432/shared_water
+      RUNTIME_DATABASE_ROLE: shared_water_runtime
+    command: [sh, -ec, 'node build/server/migrate.js && node build/server/grant-runtime.js']
+  app:
+    image: shared-waters:local
+    build: .
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    environment:
+      DOTENV_CONFIG_PATH: /dev/null
+      DATABASE_URL: postgres://shared_water_runtime:local_runtime_only@db:5432/shared_water
+      COLLECTION_ENABLED: 'false'
+      AI_QUESTIONS_ENABLED: 'false'
+      API_ALLOWED_ORIGINS: http://127.0.0.1:3001,http://localhost:3001
+    command: [sh, -ec, 'node build/server/verify-schema.js && exec node build/server/index.js']
+    ports: ['127.0.0.1:3001:3001']
+    healthcheck:
+      test: [CMD, node, -e, 'fetch("http://127.0.0.1:3001/api/health").then(r => { if (!r.ok) process.exit(1) }).catch(() => process.exit(1))']
+      interval: 3s
+      timeout: 5s
+      retries: 20
+volumes:
+  postgres:
